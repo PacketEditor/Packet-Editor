@@ -1,0 +1,18 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "name": "Packet editor (application)",
+  "description": "Monitor and edit requests/responces",
+  "version": "1",
+  "manifest_version": 2,
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "icons": { "16": "editor-16.png", "48": "editor-48.png", "128": "editor-128.png" },
+  "permissions": [
+    {"socket":["tcp-connect", "tcp-listen"]},
+    "clipboardWrite"
+  ]
+}

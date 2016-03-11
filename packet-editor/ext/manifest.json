@@ -1,0 +1,14 @@
+{
+"update_url":"http://clients2.google.com/service/update2/crx",
+   "background": {
+      "scripts": [ "inject.js", "background.js" ]
+   },
+   "description": "Allows the user to modify requests/responces as they happen.",
+   "devtools_page": "devtools.html",
+   "manifest_version": 2,
+   "name": "Packet editor (extension)",
+   "permissions": [ "webRequest", "webRequestBlocking", "webNavigation", "tabs", "http://*/*", "https://*/*", "debugger" ],
+   "version": "1",
+   "web_accessible_resources": ["editor-16.png"],
+   "icons": { "16": "editor-16.png", "48": "editor-48.png", "128": "editor-128.png" }
+}
